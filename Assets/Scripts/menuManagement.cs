@@ -1,34 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class manejoMenu : MonoBehaviour
+public class menuManagement : MonoBehaviour
 {
-    [SerializeField] AudioSource audioAmbiente;
+    [SerializeField] AudioSource ambientMusic;
    // private Renderer _myRenderer;
    // private Vector3 _startingPosition;
 
-    public void Start()
-    {
-        //_startingPosition = transform.parent.localPosition;
-        //_myRenderer = GetComponent<Renderer>();
-    }
 
-    public void CargarTour()
+    public void StartGame()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void CargarAcercaDe()
+    public void LoadTutorial()
     {
         SceneManager.LoadScene(1); // Carga escena de acerca de
     }
 
-    public void CargarMenu()
+    public void LoadAboutUs()
     {
         SceneManager.LoadScene(0); //carga menu
     }
 
-    public void SalirApp()
+    public void ExitApp()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;

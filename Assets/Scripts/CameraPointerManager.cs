@@ -26,14 +26,14 @@ public class CameraPointerManager : MonoBehaviour
 
     private void GazeSelection()
     {
-        if (_gazedAtObject.name == "Iniciar")
-            _gazedAtObject?.SendMessage("CargarTour", null, SendMessageOptions.DontRequireReceiver);
-        if (_gazedAtObject.name == "AcercaDe")
-            _gazedAtObject?.SendMessage("CargarAcercaDe", null, SendMessageOptions.DontRequireReceiver);
-        if (_gazedAtObject.name == "VolverM")
-            _gazedAtObject?.SendMessage("CargarMenu", null, SendMessageOptions.DontRequireReceiver);
-        if (_gazedAtObject.name == "Salir")
-            _gazedAtObject?.SendMessage("SalirApp", null, SendMessageOptions.DontRequireReceiver);
+        if (_gazedAtObject.name == "Play")
+            _gazedAtObject?.SendMessage("StartGame", null, SendMessageOptions.DontRequireReceiver);
+        if (_gazedAtObject.name == "Tutorial")
+            _gazedAtObject?.SendMessage("LoadTutorial", null, SendMessageOptions.DontRequireReceiver);
+        if (_gazedAtObject.name == "About")
+            _gazedAtObject?.SendMessage("LoadAboutUs", null, SendMessageOptions.DontRequireReceiver);
+        if (_gazedAtObject.name == "Exit")
+            _gazedAtObject?.SendMessage("ExitApp", null, SendMessageOptions.DontRequireReceiver);
 
     }
 
