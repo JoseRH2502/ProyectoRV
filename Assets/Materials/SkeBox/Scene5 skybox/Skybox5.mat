@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Scene5
+  m_Name: Skybox5
   m_Shader: {fileID: 4800000, guid: 5e444cd13928b274babcaedb447ba3ef, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,13 +36,13 @@ Material:
     - _FogEnd: 0.152
     - _FogIntens: 1
     - _FogStart: 0
-    - _MieIntens: 0.638
+    - _MieIntens: 0.489
     - _MieSize: 1
     - _Rotation: 134
-    - _SunDir: 86
+    - _SunDir: 63
     m_Colors:
     - <noninit>: {r: 0, g: 2.0182498, b: 1e-45, a: 1.2904559e-15}
-    - _FogCol: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0.5}
+    - _FogCol: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0.5}
     - _MieTint: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 0.5}
     - _Tint: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5}
   m_BuildTextureStacks: []

@@ -70,7 +70,7 @@ SubShader {
         {
             v2f o;
             UNITY_SETUP_INSTANCE_ID(v);
-            UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+            //UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
             float3 rotated = RotateAroundYInDegrees(v.vertex, _Rotation);
             o.vertex = UnityObjectToClipPos(rotated);
             o.texcoord = v.vertex.xyz;
