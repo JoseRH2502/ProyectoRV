@@ -33,16 +33,16 @@ Material:
     - <noninit>: 0
     - _Exposure: 0.47
     - _FogBottom: 0
-    - _FogEnd: 0.174
+    - _FogEnd: 0.181
     - _FogIntens: 1
-    - _FogStart: 0
-    - _MieIntens: 0.467
+    - _FogStart: 0.033
+    - _MieIntens: 2
     - _MieSize: 1
     - _Rotation: 14
     - _SunDir: 86
     m_Colors:
     - <noninit>: {r: 0, g: 2.0182498, b: 1e-45, a: 1.2904559e-15}
     - _FogCol: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0.5}
-    - _MieTint: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 0.5}
+    - _MieTint: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.5}
     - _Tint: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5}
   m_BuildTextureStacks: []
