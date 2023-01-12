@@ -97,8 +97,9 @@ public class VrModeController : MonoBehaviour
             {
                 Api.ScanDeviceParams();
             }
-
+#if !UNITY_EDITOR
             Api.UpdateScreenParams();
+#endif
         }
         else
         {
