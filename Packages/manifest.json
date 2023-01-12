@@ -1,10 +1,8 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-    "com.google.xr.cardboard": "file:C:/ProyectosUnity/materiales/cardboard-xr-plugin-1.18.1",
-=======
-    "com.google.xr.cardboard": "file:C:/Users/kp077/Downloads/cardboard-xr-plugin-1.18.1",
->>>>>>> 9f8f91c65d97b7fd1e7b5e4d4301fe4d5d5c85fc
+
+    "com.google.xr.cardboard": "https://github.com/AndrikSJD/Cardboard-Plugin-VR-Project.git",
+
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.ide.rider": "3.0.16",
     "com.unity.ide.visualstudio": "2.0.16",
