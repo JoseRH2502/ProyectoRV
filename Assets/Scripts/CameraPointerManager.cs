@@ -8,17 +8,12 @@ public class CameraPointerManager : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private GameObject pointer;
     [SerializeField] float maxDistancePointer = 2.5f;
-    [Range(0, 1)]
     [SerializeField] float disPointerObject = 0.95f;
 
     private const float _maxDistance = 20;
     private GameObject _gazedAtObject = null;
 
-    private float scaleSize = 0.025f;
-
     private readonly string interactableTag = "Interactable";
-    private readonly string grabTag = "Grab";
-    private readonly string ungrabTag = "UnGrab";
     private readonly string enemyTag = "Enemy";
 
 
@@ -41,14 +36,6 @@ public class CameraPointerManager : MonoBehaviour
 
         if (_gazedAtObject.CompareTag(interactableTag))
             _gazedAtObject?.SendMessage("OnPointerClick", null, SendMessageOptions.DontRequireReceiver);
-
-        // Esta funcionan va a tomar un objeto con el Gaze y lo va a atachar a la mano indicada
-        if (_gazedAtObject.CompareTag(grabTag))
-            _gazedAtObject?.SendMessage("OnGrabRayInteractionAttach", null, SendMessageOptions.DontRequireReceiver);
-        
-        // Esta funcionan va a tomar un objeto y lo va a des-atachar sobre la mesa colisionada
-        if (_gazedAtObject.CompareTag(ungrabTag))
-            _gazedAtObject?.SendMessage("OnGrabRayInteractionDeAttach", null, SendMessageOptions.DontRequireReceiver);
 
     }
 
