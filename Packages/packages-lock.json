@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "com.google.xr.cardboard": {
+<<<<<<< HEAD
       "version": "file:C:/ProyectosUnity/materiales/cardboard-xr-plugin-1.18.1",
+=======
+      "version": "file:C:/Users/kp077/Downloads/cardboard-xr-plugin-1.18.1",
+>>>>>>> 9f8f91c65d97b7fd1e7b5e4d4301fe4d5d5c85fc
       "depth": 0,
       "source": "local",
       "dependencies": {
