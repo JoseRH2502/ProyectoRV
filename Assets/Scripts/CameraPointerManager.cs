@@ -58,10 +58,6 @@ public class CameraPointerManager : MonoBehaviour
                 _gazedAtObject.SendMessage("OnPointerEnter", null, SendMessageOptions.DontRequireReceiver);
                 if (hit.transform.CompareTag(interactableTag))
                     GazeManager.Instance.StartGazeSelection();
-                if (hit.transform.CompareTag(grabTag))
-                    GazeManager.Instance.StartGazeSelection();
-                if (hit.transform.CompareTag(ungrabTag))
-                    GazeManager.Instance.StartGazeSelection();
                 if (hit.transform.CompareTag(enemyTag))
                     Shot.Instance.StartFiring();
             }
