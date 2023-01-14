@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class spawnEnemiesS2 : MonoBehaviour
+public class spawnEnemiesS5 : MonoBehaviour
 {
     // Start is called before the first frame update
 

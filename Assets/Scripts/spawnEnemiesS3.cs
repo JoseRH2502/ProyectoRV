@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class spawnEnemiesS2 : MonoBehaviour
+public class spawnEnemiesS3 : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -37,7 +37,7 @@ public class spawnEnemiesS2 : MonoBehaviour
     IEnumerator NewEnemy1()
     {
         _isNewEnemy = true;
-        Instantiate(_enemy1, new Vector3(RandomPosicion(33, 44), 1.7f, RandomPosicion(21, 25)),Quaternion.identity);
+        Instantiate(_enemy1, new Vector3(RandomPosicion(39, 43), 3f, RandomPosicion(19.5f,22.4f)),Quaternion.identity);
         _currentEnemies1++;
         yield return new WaitForSeconds(5);
         _isNewEnemy = false;
@@ -46,7 +46,7 @@ public class spawnEnemiesS2 : MonoBehaviour
     IEnumerator NewEnemy2()
     {
         _isNewEnemy2 = true;
-        Instantiate(_enemy2, new Vector3(RandomPosicion(33,44), 1.7f, RandomPosicion(21, 25)), Quaternion.identity);
+        Instantiate(_enemy2, new Vector3(RandomPosicion(22.5f,26), 2.7f, RandomPosicion(38.2f, 35.2f)), Quaternion.identity);
         _currentEnemies2++;
         yield return new WaitForSeconds(5);
         _isNewEnemy2 = false;

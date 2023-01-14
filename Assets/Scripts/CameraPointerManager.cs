@@ -54,17 +54,24 @@ public class CameraPointerManager : MonoBehaviour
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
-                _gazedAtObject?.SendMessage("OnPointerExit", null, SendMessageOptions.DontRequireReceiver);
-                _gazedAtObject = hit.transform.gameObject;
-                _gazedAtObject.SendMessage("OnPointerEnter", null, SendMessageOptions.DontRequireReceiver);
-                if (hit.transform.CompareTag(interactableTag))
-                    GazeManager.Instance.StartGazeSelection();
-                if (hit.transform.CompareTag(enemyTag))
+                
+                    _gazedAtObject = hit.transform.gameObject;
+                if (_gazedAtObject != null)
                 {
-                    _gazedAtObject?.SendMessage("OnPointerClick", null, SendMessageOptions.DontRequireReceiver);
-                    Shot.Instance.StartFiring();
-                    
+                    _gazedAtObject?.SendMessage("OnPointerExit", null, SendMessageOptions.DontRequireReceiver);
+                    _gazedAtObject.SendMessage("OnPointerEnter", null, SendMessageOptions.DontRequireReceiver);
+                    if (hit.transform.CompareTag(interactableTag))
+                        GazeManager.Instance.StartGazeSelection();
+                    if (hit.transform.CompareTag(enemyTag))
+                    {
+
+                        _gazedAtObject?.SendMessage("OnPointerClick", null, SendMessageOptions.DontRequireReceiver);
+                        Shot.Instance.StartFiring();
+
+                    }
                 }
+                
+               
                     
             }
 
