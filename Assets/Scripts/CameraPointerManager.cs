@@ -25,6 +25,7 @@ public class CameraPointerManager : MonoBehaviour
 
     private void GazeSelection()
     {
+
         if (_gazedAtObject.name == "Play")
             _gazedAtObject?.SendMessage("StartGame", null, SendMessageOptions.DontRequireReceiver);
         if (_gazedAtObject.name == "Tutorial")
@@ -59,7 +60,12 @@ public class CameraPointerManager : MonoBehaviour
                 if (hit.transform.CompareTag(interactableTag))
                     GazeManager.Instance.StartGazeSelection();
                 if (hit.transform.CompareTag(enemyTag))
+                {
+                    _gazedAtObject?.SendMessage("OnPointerClick", null, SendMessageOptions.DontRequireReceiver);
                     Shot.Instance.StartFiring();
+                    
+                }
+                    
             }
 
         }
