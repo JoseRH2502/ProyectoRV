@@ -37,7 +37,7 @@ public class spawnEnemiesS6 : MonoBehaviour
     IEnumerator NewEnemy1()
     {
         _isNewEnemy = true;
-        Instantiate(_enemy1, new Vector3(RandomPosicion(33, 44), 1.7f, RandomPosicion(21, 25)),Quaternion.identity);
+        Instantiate(_enemy1, new Vector3(RandomPosicion(27.42f,37.2f), 2.1f, RandomPosicion(53.28f, 59.8f)),Quaternion.identity);
         _currentEnemies1++;
         yield return new WaitForSeconds(5);
         _isNewEnemy = false;
@@ -46,7 +46,7 @@ public class spawnEnemiesS6 : MonoBehaviour
     IEnumerator NewEnemy2()
     {
         _isNewEnemy2 = true;
-        Instantiate(_enemy2, new Vector3(RandomPosicion(33,44), 1.7f, RandomPosicion(21, 25)), Quaternion.identity);
+        Instantiate(_enemy2, new Vector3(RandomPosicion(62.34f,70), 2.1f, RandomPosicion(25.73f,39.8f)), Quaternion.identity);
         _currentEnemies2++;
         yield return new WaitForSeconds(5);
         _isNewEnemy2 = false;
