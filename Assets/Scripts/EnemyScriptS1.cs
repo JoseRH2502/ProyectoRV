@@ -6,6 +6,9 @@ public class EnemyScriptS1 : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioSource _audio;
+    public string enemy1;
+    public string enemy2;
+
 
 
 
@@ -16,14 +19,14 @@ public class EnemyScriptS1 : MonoBehaviour
         //  else
         // _audio.Stop();
 
-        if (this.name == "Enemy1S1(Clone)")
+        if (this.name == enemy1)
         {
             int _currentEnemies1 = GameObject.Find("GameController(Clone)").GetComponent<spawnEnemiesS1>()._currentEnemies1;
             _currentEnemies1--;
             GameObject.Find("GameController(Clone)").GetComponent<spawnEnemiesS1>()._currentEnemies1 = _currentEnemies1;
             GameObject.Find("GameController(Clone)").GetComponent<spawnEnemiesS1>()._enemiesDefeated += 1;
         }
-        if (this.name == "Enemy2S1(Clone)")
+        if (this.name == enemy2)
         {
             int _currentEnemies2 = GameObject.Find("GameController(Clone)").GetComponent<spawnEnemiesS1>()._currentEnemies2;
             _currentEnemies2--;
